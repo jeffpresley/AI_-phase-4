@@ -1,0 +1,28 @@
+ Data Visualization
+
+# Create a figure for the plot
+plt.figure(figsize=(12, 6))
+
+# Plot energy consumption over time
+plt.plot(data['Datetime'], data['AEP_MW'], label='Energy Consumption (MW)')
+
+# Customize the plot with labels and title
+plt.xlabel('Date and Time')
+plt.ylabel('Energy Consumption (MW)')
+plt.title('Hourly Energy Consumption')
+
+# Add a grid to the plot
+plt.grid()
+
+# Rotate x-axis labels for better readability
+plt.xticks(rotation=45)
+
+# Add a legend to the plot
+plt.legend()
+
+# Display the plot
+plt.show()
+
+ Display the data statistics
+print("\nData Statistics:")
+print(data_statistics)
