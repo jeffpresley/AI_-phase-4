@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  jeffpresley
+pool: jeffpresley
+  
 
 steps:
 - task: Maven@3
